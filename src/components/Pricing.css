@@ -1,0 +1,109 @@
+.pricing-section {
+  padding: 6rem 2rem;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+}
+
+.pricing-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-header p {
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+
+/* CARDS GRID */
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* CARD STYLES */
+.pricing-card {
+  background: var(--nav-bg);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* POPULAR BADGE */
+.popular {
+  border: 2px solid var(--text);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* PLAN NAME & PRICE */
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+/* FEATURES */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.plan-features li {
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+}
+
+/* BUTTON */
+.pricing-card .btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pricing-card .btn.primary {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.pricing-card .btn.primary:hover {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--text);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .pricing-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,125 @@
+/* ================= SUBSCRIBE PAGE ================= */
+
+.subscribe-page {
+  padding: 6rem 1rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.subscribe-page h1 {
+  text-align: center;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 0.6rem;
+}
+
+.subscribe-page p {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+
+/* ================= FORM ================= */
+
+.subscribe-form {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.subscribe-form input,
+.subscribe-form select,
+.subscribe-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.subscribe-form input::placeholder,
+.subscribe-form textarea::placeholder {
+  color: var(--muted);
+}
+
+.subscribe-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ================= BUTTON ================= */
+
+.subscribe-form .btn {
+  margin-top: 1rem;
+}
+
+/* ================= NOTE ================= */
+
+.subscribe-page .note {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+  .subscribe-form {
+    padding: 2rem 1.5rem;
+  }
+}
+
+
+/* ================= SUCCESS STATE ================= */
+
+.success-box {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 3rem 2rem;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.success-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.success-box p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.success-box .muted {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.back-btn {
+  margin-top: 1.8rem;
+  display: inline-block;
+}

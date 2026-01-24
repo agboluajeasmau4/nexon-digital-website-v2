@@ -1,0 +1,19 @@
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="dark"] {
+  --bg: #0b1120;
+  --text: #ffffff;
+  --muted: #cbd5f5;
+  --nav-bg: rgba(11, 17, 32, 0.85);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}

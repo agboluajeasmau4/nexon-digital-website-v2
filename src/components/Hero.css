@@ -1,0 +1,145 @@
+/* ================= HERO SLIDER ================= */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+/* Slides */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Overlay text/buttons */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--text);
+  padding: 0 1rem;
+  max-width: 900px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-subtext {
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  margin-bottom: 2rem;
+  color: var(--muted);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Buttons overlay */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+  padding: 0.75rem 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--text);
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn.primary {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.hero-buttons .btn.primary:hover {
+  background: transparent;
+  color: var(--text);
+}
+
+.hero-buttons .btn.secondary {
+  background: transparent;
+  color: var(--text);
+}
+
+.hero-buttons .btn.secondary:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
+  .hero-subtext {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease, transform 0.3s ease;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--text);
+  padding: 0 1rem;
+  max-width: 900px;
+  transition: transform 0.2s ease-out;
+}
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
