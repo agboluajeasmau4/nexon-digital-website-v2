@@ -4,11 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "npx gh-pages -d dist"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "npx gh-pages -d dist",
+  "update-site": "git add . && git commit -m \"Update site\" && git push origin main && npm run deploy"
+  
+}
+,
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

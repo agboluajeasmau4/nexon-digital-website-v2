@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ServicePage from "./pages/Services";
 import Subscribe from "./pages/Subscribe";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="services" element={<ServicePage />} />
         <Route path="subscribe" element={<Subscribe />} />
+
+<Route path="/portfolio" element={<Portfolio />} />
         <Route path="*" element={<Home />} /> {/* fallback for unknown paths */}
       </Routes>
     </Router>

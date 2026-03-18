@@ -16,4 +16,5 @@ const PortfolioCard = ({ image, title, category }) => {
   );
 };
 
+   
 export default PortfolioCard;
