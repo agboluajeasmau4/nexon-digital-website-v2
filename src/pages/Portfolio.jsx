@@ -6,11 +6,11 @@ import "./portfolio.css";
 
 // Images
 import p1 from "../assets/portfolio/p1.jpg";
-import p2 from "../assets/portfolio/p1.jpg";
-import p3 from "../assets/portfolio/p1.jpg";
+import p2 from "../assets/portfolio/p2.jpg";
+import p3 from "../assets/portfolio/p3.jpg";
 import p4 from "../assets/portfolio/p1.jpg";
-import p5 from "../assets/portfolio/p1.jpg";
-import p6 from "../assets/portfolio/p1.jpg";
+import p5 from "../assets/portfolio/p2.jpg";
+import p6 from "../assets/portfolio/p3.jpg";
 const projects = [
   {
     image: p1,
