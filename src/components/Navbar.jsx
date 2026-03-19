@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="#contact">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
 
@@ -76,8 +76,9 @@ const Navbar = () => {
             </span>
           </button>
 
-          {/* CTA button */}
-          <Link to="/services" className="nav-cta">
+          {/* CTA button */} 
+
+          <Link to="/quote" className="nav-cta">
             Get a Quote
           </Link>
 

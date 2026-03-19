@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
+import CTA from "../components/CTA"
 import "./portfolio.css";
 
 // Images
@@ -79,7 +80,7 @@ const Portfolio = () => {
                 
         </div>
       </section>
-
+      <CTA/>
       <Footer />
     </>
   );

@@ -1,0 +1,58 @@
+.cta{
+    padding: 5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.cta-container{
+    max-width: 800px;
+    text-align: center;
+    padding: 3rem 2rem;
+    border: 1px solid var(--text);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+/* Text */
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.cta p{
+    margin-bottom: 2rem;
+    color: var(--muted);
+}
+/* Buttons */
+.cta-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.cta .btn{
+    padding: 0.75rem 1.6rem;
+    border:1px solid var(--text);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.cta .btn .primary{
+    background: var(--text);
+    color: var(--bg);
+}
+.cta .btn .primary:hover{
+    background: transparent;
+    color: var(--text);
+}
+.cta .btn .secondary:hover{
+    background: var(--text);
+    color: var(--bg);
+}
+/*Hover Effect*/
+.cta-container:hover{
+    transform: translateY(-5px);
+
+}
+/* RESPONSIVE */
+@media (max-width:6oopx){
+    .cta h2{
+        font-size: 1.5rem;
+    }
+}

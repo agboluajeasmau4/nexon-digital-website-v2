@@ -27,6 +27,7 @@
 .filters button {
   padding: 0.5rem 1.2rem;
   border: 1px solid var(--text);
+  border-radius: 5px;
   background: transparent;
   cursor: pointer;
   transition: 0.3s;

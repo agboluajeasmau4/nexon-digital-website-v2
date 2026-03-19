@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import ServicePage from "./pages/Services";
 import Subscribe from "./pages/Subscribe";
 import Portfolio from "./pages/Portfolio";
+import Quote from "./pages/Quote";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="services" element={<ServicePage />} />
         <Route path="subscribe" element={<Subscribe />} />
-
-<Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/quote" element={<Quote />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} /> {/* fallback for unknown paths */}
       </Routes>
     </Router>
