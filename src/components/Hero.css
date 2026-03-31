@@ -1,16 +1,15 @@
-/* ================= HERO SLIDER ================= */
-/* ROOT HERO */
+/* ===== HERO ROOT ===== */
 .hero {
   position: relative;
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
-  overflow: hidden;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
-/* BACKGROUND GRID */
+/* ===== BACKGROUND ===== */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -20,27 +19,24 @@
 .grid-overlay {
   position: absolute;
   inset: 0;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.04) 1px,
-      transparent 1px
-    ),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
-/* GLOW ARC */
+/* CLEANER ARC */
 .glow-arc {
   position: absolute;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255,255,255,0.12);
   top: 50%;
-  left: 65%;
+  left: 70%;
   transform: translate(-50%, -50%);
-  filter: blur(1px);
-  animation: rotateArc 12s linear infinite;
+  animation: rotateArc 18s linear infinite;
 }
 
 .glow-arc::before {
@@ -48,21 +44,12 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  box-shadow: 0 0 60px rgba(255, 255, 255, 0.2),
-              0 0 120px rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 0 80px rgba(255,255,255,0.08),
+    0 0 160px rgba(255,255,255,0.04);
 }
 
-/* ROTATION */
-@keyframes rotateArc {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-/* CONTAINER */
+/* ===== CONTAINER ===== */
 .hero-container {
   position: relative;
   z-index: 2;
@@ -70,41 +57,63 @@
   margin: auto;
   padding: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
   align-items: center;
 }
 
-/* TEXT */
+/* ===== CONTENT ===== */
+.hero-content {
+  max-width: 560px;
+}
+
+/* BADGE */
+.hero-badge {
+  display: inline-block;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  margin-bottom: 1rem;
+}
+
+/* TITLE */
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 3.8rem);
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  line-height: 1.15;
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1.2rem;
-  animation: fadeUp 1s ease forwards;
+  margin-bottom: 1rem;
 }
 
+.hero-title span {
+  opacity: 0.7;
+}
+
+/* SUBTEXT */
 .hero-subtext {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--muted);
-  margin-bottom: 2rem;
-  max-width: 500px;
-  animation: fadeUp 1.2s ease forwards;
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
 }
 
-/* BUTTONS */
+/* ===== BUTTONS ===== */
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: nowrap; /* NEVER STACK */
+  gap: 0.8rem;
   margin-bottom: 1.5rem;
 }
 
 .btn {
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
+  padding: 0.75rem 1.4rem;
+  border-radius: 8px;
   font-weight: 600;
   border: 1px solid var(--text);
-  transition: 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap; /* PREVENT TEXT BREAK */
+  transition: all 0.25s ease;
 }
 
 .btn.primary {
@@ -113,8 +122,7 @@
 }
 
 .btn.primary:hover {
-  background: transparent;
-  color: var(--text);
+  opacity: 0.85;
 }
 
 .btn.secondary {
@@ -127,64 +135,43 @@
   color: var(--bg);
 }
 
-/* STATS */
+/* ===== STATS ===== */
 .hero-stats {
   display: flex;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+  flex-direction: row;
+  flex-wrap: nowrap; /* NEVER STACK */
+  gap: 1rem;
+  font-size: 0.85rem;
   color: var(--muted);
 }
 
-/* VISUAL */
+/* ===== IMAGE ===== */
 .hero-visual {
-  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .hero-img {
   width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  animation: float 4s ease-in-out infinite;
+  max-width: 520px;
+  border-radius: 14px;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.6);
+  animation: float 5s ease-in-out infinite;
 }
 
-.hero-img.overlay {
-  position: absolute;
-  bottom: -40px;
-  right: -40px;
-  width: 80%;
-  animation-delay: 1s;
-}
-
-/* FLOATING EFFECT */
+/* ===== ANIMATIONS ===== */
 @keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
 }
 
-/* TEXT ANIMATION */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes rotateArc {
+  from { transform: translate(-50%, -50%) rotate(0); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* MOBILE *//* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -192,24 +179,11 @@
   }
 
   .hero-buttons {
-    display: flex;
-    flex-direction: row; /* ✅ force horizontal */
     justify-content: center;
-    flex-wrap: nowrap; /* ✅ prevent stacking */
-    gap: 0.6rem;
-  }
-
-  .hero-buttons .btn {
-    flex: 1;
-   /* ✅ prevents shrinking too much */
-    text-align: center;
-    padding: 0.7rem 1rem;
-    font-size: 0.9rem;
   }
 
   .hero-stats {
     justify-content: center;
-    flex-wrap: wrap;
   }
 
   .hero-visual {
@@ -217,15 +191,20 @@
   }
 
   .glow-arc {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     left: 50%;
   }
 }
 
+/* VERY SMALL DEVICES */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 2rem;
+  }
 
-.hero-buttons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; /* 🔥 ensures no stacking anywhere */
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
 }

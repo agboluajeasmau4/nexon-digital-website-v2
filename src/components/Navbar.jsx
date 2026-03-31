@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="/services">Pricing & Plans</Link>
           </li>
           <li>
             <Link to="/portfolio">Portfolio</Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
         <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
-        <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
+        <Link to="/services" onClick={() => setMenuOpen(false)}>Pricing & Plans</Link>
         <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
         <Link to="#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
         <Link to="/services" className="nav-cta" onClick={() => setMenuOpen(false)}>
