@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "npx gh-pages -d dist",
-  "update-site": "git add -A && git diff --cached --quiet || git commit -m \"Update site $(date +'%Y-%m-%d %H:%M:%S')\" && git push origin main && npm run deploy"
-}
-,
+    "dev": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "update-site": "git add -A && git commit --allow-empty -m \"Auto deploy\" && git push origin main && npm run deploy"
+  },
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
