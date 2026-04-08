@@ -84,6 +84,11 @@
   color: var(--muted);
 }
 
+.pricing-box:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  border-color: var(--text);
+}
 /* ================= POPULAR PLAN ================= */
 
 .pricing-box.popular {

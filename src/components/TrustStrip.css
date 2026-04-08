@@ -1,0 +1,100 @@
+/* ===== ROOT ===== */
+.trust-strip {
+  width: 100%;
+  background: var(--bg);
+  color: var(--text);
+  padding: 24px 12px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== METRICS ROW ===== */
+.trust-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  flex-wrap: nowrap; /* keep inline */
+}
+
+/* ITEM */
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.trust-item strong {
+  color: var(--text);
+}
+
+/* ===== LOGOS ===== */
+.trust-logos {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.trust-subtitle {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+/* LOGO ROW */
+.logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  flex-wrap: wrap; /* logos can wrap safely */
+}
+
+/* LOGO TEXT STYLE (placeholder) */
+.logos-row span {
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.logos-row span:hover {
+  opacity: 1;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .trust-container {
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  .trust-item {
+    font-size: 0.8rem;
+  }
+
+  .logos-row {
+    gap: 1.2rem;
+  }
+
+  .logos-row span {
+    font-size: 0.9rem;
+  }
+}
+
+/* VERY SMALL DEVICES */
+@media (max-width: 360px) {
+  .trust-item {
+    font-size: 0.7rem;
+  }
+
+  .logos-row span {
+    font-size: 0.8rem;
+  }
+}

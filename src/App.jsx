@@ -7,7 +7,7 @@ import Subscribe from "./pages/Subscribe";
 import Portfolio from "./pages/Portfolio";
 import Quote from "./pages/Quote";
 import Contact from "./pages/Contact";
-
+import Booking from "./pages/Booking";
 function App() {
   return (
     <Router basename="/nexon-digital-website-v2">
@@ -18,6 +18,7 @@ function App() {
         <Route path="/quote" element={<Quote />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/book" element={<Booking />} />
         <Route path="*" element={<Home />} /> {/* fallback for unknown paths */}
       </Routes>
     </Router>

@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import TrustStrip from "../components/TrustStrip";
 import Services from "../sections/Services";
 import Portfolio from "../sections/Portfolio";
 import WhyChooseUs from "../sections/WhyChooseUs";
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <TrustStrip />
       <Services />
       <Portfolio />
       <WhyChooseUs />
