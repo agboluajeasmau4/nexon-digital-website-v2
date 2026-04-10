@@ -23,124 +23,148 @@ return (
             {/* ================= ONE-TIME PRICING ================= */}
     <h2 className="section-title">One-Time Website Packages</h2>
 
-    <div className="pricing-grid">
+<div className="pricing-grid">
+  {/* Starter Plan */}
+  <div className="pricing-box">
+    <h3>Starter</h3>
+    <p className="price">₦150,000 <span>/ $100</span></p>
 
-      <div className="pricing-box">
-        <h3>Starter</h3>
-        <p className="price">₦150,000</p>
-          <ul>
-              <li>✔ 3–5 page website</li>
-              <li>✔ Mobile responsive design</li>
-              <li>✔ Basic SEO setup</li>
-              <li>✔ Contact form integration</li>
-              <li>✔ Fast loading optimization</li>
-              <li>✔ 7-day delivery</li>
-              <li>✔ 1 revision</li>
-            </ul>
-
-        {/* Link to your form or WhatsApp */}
-         <Link to="/book?plan=starter" className="btn primary">
-        Get Starter
-      </Link>
-      </div>
-
-      <div className="pricing-box popular">
-        <span className="badge">Most Popular</span>
-        <h3>Growth</h3>
-        <p className="price">₦300,000</p>
-        <ul>
-          <li>Up to 7 pages</li>
-          <li>Custom UI/UX design</li>
-          <li>SEO optimization (on-page)</li>
-          <li>Lead capture system</li>
-          <li>WhatsApp integration</li>
-          <li>Google Analytics setup</li>
-          <li>Speed optimization</li>
-          <li>14-day delivery</li>
-          <li>3 revisions</li>
-        </ul>
-         <Link to="/book?plan=growth" className="btn primary">
-        Choose Growth
-      </Link>
-      </div>
-
-      <div className="pricing-box">
-        <h3>Premium</h3>
-        <p className="price">₦600,000</p>
-      <ul>
-        <li>10+ pages or web app</li>
-        <li>E-commerce / payment integration</li>
-        <li>Advanced SEO (technical)</li>
-        <li>Admin dashboard (if needed)</li>
-        <li>Conversion-focused design</li>
-        <li>Performance optimization</li>
-        <li>Security hardening</li>
-        <li>30-day support</li>
-        <li>Unlimited revisions</li>
-      </ul>
-        <Link to="/book?plan=premium" className="btn primary">
-          Book a Call
-        </Link>
-
-      </div>
-
-    </div>
-
-
-  {/* ================= SUBSCRIPTION ================= */}
-  <h2 className="section-title">Monthly Website Subscription</h2>
-  <p className="section-subtext">
-    No large upfront cost. Your website stays live as long as you subscribe.
-  </p>
-
-  <div className="pricing-grid">
-
-    <div className="pricing-box">
-      <h3>Basic</h3>
-      <p className="price">₦5,000 <span>/ month</span></p>
-      <ul>
-      <li>1–3 pages</li>
-      <li>Hosting included</li>
-      <li>Free SSL</li>
-      <li>Basic maintenance</li>
-      <li>1 content update/month</li>
+    <ul className="features">
+      <li><span className="check">✓</span> 3–5 page website</li>
+      <li><span className="check">✓</span> Mobile responsive design</li>
+      <li><span className="check">✓</span> Basic SEO setup</li>
+      <li><span className="check">✓</span> Contact form integration</li>
+      <li><span className="check">✓</span> Fast loading optimization</li>
+      <li><span className="check">✓</span> 7-day delivery</li>
+      <li><span className="check">✓</span> 1 revision</li>
     </ul>
-      <Link to="/subscribe?plan=basic" className="btn primary">
-        Start Now
-      </Link>
-    </div>
 
-    <div className="pricing-box popular">
-      <span className="badge">Recommended</span>
-      <h3>Business</h3>
-      <p className="price">₦10,000 <span>/ month</span></p>
-          <ul>
-      <li>Up to 5 pages</li>
-      <li>Hosting + domain</li>
-      <li>WhatsApp integration</li>
-      <li>Monthly updates (3–5 changes)</li>
-      <li>Basic SEO maintenance</li>
+    <Link to="/book?plan=starter" className="btn primary">
+      Get Starter
+    </Link>
+  </div>
+
+  {/* Growth Plan */}
+  <div className="pricing-box popular">
+    <span className="badge">Most Popular</span>
+    <h3>Growth</h3>
+    <p className="price">₦300,000 <span>/ $200</span></p>
+
+    <ul className="features">
+      <li><span className="check">✓</span> Up to 7 pages</li>
+      <li><span className="check">✓</span> Custom UI/UX design</li>
+      <li><span className="check">✓</span> SEO optimization (on-page)</li>
+      <li><span className="check">✓</span> Lead capture system</li>
+      <li><span className="check">✓</span> WhatsApp integration</li>
+      <li><span className="check">✓</span> Google Analytics setup</li>
+      <li><span className="check">✓</span> Speed optimization</li>
+      <li><span className="check">✓</span> 14-day delivery</li>
+      <li><span className="check">✓</span> 3 revisions</li>
     </ul>
-      <Link to="/subscribe?plan=business" className="btn primary">
-        Start Business
-      </Link>
-    </div>
 
-    <div className="pricing-box">
-      <h3>Pro</h3>
-      <p className="price">₦20,000 <span>/ month</span></p>
-          <ul>
-          <li>Up to 10 pages</li>
-          <li>Advanced SEO maintenance</li>
-          <li>Speed optimization</li>
-          <li>Priority support</li>
-          <li>Unlimited minor updates</li>
-          <li>Monthly analytics report</li>
-        </ul>
-      <Link to="/subscribe?plan=pro" className="btn primary">
-        Go Pro
-      </Link>
-    </div>
+    <Link to="/book?plan=growth" className="btn primary">
+      Choose Growth
+    </Link>
+  </div>
+
+  {/* Premium Plan */}
+  <div className="pricing-box">
+    <h3>Premium</h3>
+    <p className="price">₦600,000 <span>/ $400</span></p>
+
+    <ul className="features">
+      <li><span className="check">✓</span> 10+ pages or web app</li>
+      <li><span className="check">✓</span> E-commerce / payment integration</li>
+      <li><span className="check">✓</span> Advanced SEO (technical)</li>
+      <li><span className="check">✓</span> Admin dashboard (if needed)</li>
+      <li><span className="check">✓</span> Conversion-focused design</li>
+      <li><span className="check">✓</span> Performance optimization</li>
+      <li><span className="check">✓</span> Security hardening</li>
+      <li><span className="check">✓</span> 30-day support</li>
+      <li><span className="check">✓</span> Unlimited revisions</li>
+    </ul>
+
+    <Link to="/book?plan=premium" className="btn primary">
+      Book a Call
+    </Link>
+  </div>
+</div>
+
+    
+
+
+                  {/* ================= SUBSCRIPTION ================= */}
+                  <h2 className="section-title">Monthly Website Subscription</h2>
+                  <p className="section-subtext">
+                    No large upfront cost. Your website stays live as long as you subscribe.
+                  </p>
+
+                  <div className="pricing-grid">
+
+                  {/* Basic Plan */}
+                  <div className="pricing-box">
+                    <h3>Basic</h3>
+                    <p className="price">
+                      ₦5,000 <span>/ month</span>
+                    </p>
+
+                    <ul className="features">
+                      <li><span className="check">✓</span> 1–3 pages</li>
+                      <li><span className="check">✓</span> Hosting included</li>
+                      <li><span className="check">✓</span> Free SSL</li>
+                      <li><span className="check">✓</span> Basic maintenance</li>
+                      <li><span className="check">✓</span> 1 content update/month</li>
+                    </ul>
+
+                    <Link to="/subscribe?plan=basic" className="btn primary">
+                      Start Now
+                    </Link>
+                  </div>
+
+                  {/* Business Plan */}
+                  <div className="pricing-box popular">
+                    <span className="badge">Recommended</span>
+                    <h3>Business</h3>
+                    <p className="price">
+                      ₦10,000 <span>/ month</span>
+                    </p>
+
+                    <ul className="features">
+                      <li><span className="check">✓</span> Up to 5 pages</li>
+                      <li><span className="check">✓</span> Hosting + domain</li>
+                      <li><span className="check">✓</span> WhatsApp integration</li>
+                      <li><span className="check">✓</span> Monthly updates (3–5 changes)</li>
+                      <li><span className="check">✓</span> Basic SEO maintenance</li>
+                    </ul>
+
+                    <Link to="/subscribe?plan=business" className="btn primary">
+                      Start Business
+                    </Link>
+                  </div>
+
+                  {/* Pro Plan */}
+                  <div className="pricing-box">
+                    <h3>Pro</h3>
+                    <p className="price">
+                      ₦20,000 <span>/ month</span>
+                    </p>
+
+                    <ul className="features">
+                      <li><span className="check">✓</span> Up to 10 pages</li>
+                      <li><span className="check">✓</span> Advanced SEO maintenance</li>
+                      <li><span className="check">✓</span> Speed optimization</li>
+                      <li><span className="check">✓</span> Priority support</li>
+                      <li><span className="check">✓</span> Unlimited minor updates</li>
+                      <li><span className="check">✓</span> Monthly analytics report</li>
+                    </ul>
+
+                    <Link to="/subscribe?plan=pro" className="btn primary">
+                      Go Pro
+                    </Link>
+                  </div>
+
+                
+
 
   </div>
 

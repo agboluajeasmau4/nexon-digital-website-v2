@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Hero.css";
 import dashboardImg from "../assets/dashboard.png";
 
@@ -34,14 +36,14 @@ const Hero = () => {
           </p>
 
           {/* CTA */}
-          <div className="hero-buttons">
-            <button className="btn primary">
-              Get Your Website
-            </button>
-            <button className="btn secondary">
-              View Our Work
-            </button>
-          </div>
+         <div className="hero-buttons">
+                  <Link to="/book" className="btn primary">
+            Book a Free Consultation
+          </Link>
+          <Link to="/portfolio" className="btn secondary">
+            View Our Work
+          </Link>
+        </div>
 
           {/* TRUST STATS */}
           <div className="hero-stats">

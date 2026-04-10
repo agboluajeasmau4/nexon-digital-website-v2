@@ -89,6 +89,71 @@
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
   border-color: var(--text);
 }
+
+
+
+
+/*updates for equal height and vertical alignment, feature list styling, check icon styling, button alignment, badge styling, popular plan emphasis, and responsive tweaks*/
+
+/* Ensure equal height and vertical alignment */
+.pricing-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+
+/* Feature list styling */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Check icon styling */
+.check {
+  color: #22c55e; /* Green check */
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+/* Align button at the bottom */
+.pricing-box .btn {
+  margin-top: auto;
+}
+
+/* Enhanced badge styling */
+.badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Optional: subtle emphasis on the popular plan */
+.pricing-box.popular {
+  border: 2px solid var(--text);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
 /* ================= POPULAR PLAN ================= */
 
 .pricing-box.popular {

@@ -74,6 +74,21 @@
   cursor: pointer;
 }
 
+.nav-cta {
+  background: #ffffff;
+  color: #000000;
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* MOBILE */
 .mobile-menu {
   display: none;

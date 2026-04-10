@@ -78,8 +78,8 @@ const Navbar = () => {
 
           {/* CTA button */} 
 
-          <Link to="/quote" className="nav-cta">
-            Get a Quote
+          <Link to="/services" className="nav-cta">
+            Explore Services
           </Link>
 
           {/* Mobile menu toggle */}
