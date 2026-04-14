@@ -482,7 +482,7 @@ return (
               Book a Free Consultation
             </Link>
               <a
-                href="https://wa.me/234808587035"
+                href="https://wa.me/2347081026981"
                 target="_blank"
                 className="btn secondary"
               >

@@ -9,8 +9,8 @@ const CTA = ()=>{
                 <div className="cta-buttons">   
                     {/* <button className="btn primary">Get a Free Quote</button> */}
 
-                    <Link to="/quote" className="btn primary">Get a Quote</Link>
-                        <button className="btn secondary">Contact Us</button>
+                    <Link to="/book" className="btn primary">Book a Free Consultation</Link>
+                        <Link to="/contact" className="btn secondary">Contact Us</Link>
 
                 </div>
             </div>
