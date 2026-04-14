@@ -6,40 +6,28 @@ import CTA from "../components/CTA"
 import "./portfolio.css";
 
 // Images
-import p1 from "../assets/portfolio/p1.jpg";
+import p1 from "../assets/portfolio/p1.png";
 import p2 from "../assets/portfolio/p2.jpg";
-import p3 from "../assets/portfolio/p3.jpg";
+import p3 from "../assets/portfolio/p3.png";
 import p4 from "../assets/portfolio/p4.png";
-import p5 from "../assets/portfolio/p5.png";
-import p6 from "../assets/portfolio/p6.png";
+import p5 from "../assets/portfolio/p5.jpg";
+// import p6 from "../assets/portfolio/p6.png";
+// import p7 from "../assets/portfolio/p7.jpg";
+// import p8 from "../assets/portfolio/p8.jpg";
+// // import p9 from "../assets/portfolio/p9.png";  
 const projects = [
-  // {
-  //   image: p1,
-  //   title: "E-commerce Store",
-  //   category: "E-commerce",
-  //   link: "https://your-link.com",
-  //   desc: "Modern online store designed for conversions and speed.",
-  //   tech: ["React", "CSS", "Stripe"],
-  // },
-  // {
-  //   image: p2,
-  //   title: "Business Website",
-  //   category: "Web Design",
-  //   link: "https://your-link.com",
-  //   desc: "Clean corporate website focused on user experience.",
-  //   tech: ["HTML", "CSS", "JavaScript"],
-  // },
-  // {
-  //   image: p3,
-  //   title: "SaaS Landing Page",
-  //   category: "UI/UX",
-  //   link: "https://your-link.com",
-  //   desc: "High-converting landing page for a SaaS product.",
-  //   tech: ["React", "Figma"],
-  // },
+
 
   {
-    image: p4,
+    image: p1,
+    title: "Restaurant Website",
+    category: "Restaurant & Food Tech",
+    link: "https://blaze-bites.lovable.app/",
+    desc: "Modern website for a fast-food restaurant with online ordering.",
+    tech: ["HTML", "CSS", "JavaScript"],
+  },
+   {
+    image: p2,
     title: "Restaurant Website",
     category: "Restaurant & Food Tech",
     link: "https://blaze-bites.lovable.app/",
@@ -47,7 +35,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
   },
     {
-    image: p5,
+    image: p3,
     title: "Fashion Store",
     category: "E-Commerce Systems",
     link: "https://noir-studio-shop.lovable.app/",
@@ -55,13 +43,21 @@ const projects = [
     tech: ["React", "CSS", "Stripe"],
   },
   {
-  image: p6,
+  image: p4,
   title: "Prestige Estates – Real Estate Website",
   category: "Real Estate Solutions",
   link : "https://prestige-estates-dwell.lovable.app/" ,
   desc: "A modern property listing platform designed to help real estate agencies showcase properties and generate qualified leads through intuitive search and contact features.",
   tech: ["React", "Node.js", "MongoDB"]
-}
+},
+ {
+    image: p5,
+    title: "Restaurant Website",
+    category: "Restaurant & Food Tech",
+    link: "https://blaze-bites.lovable.app/",
+    desc: "Modern website for a fast-food restaurant with online ordering.",
+    tech: ["HTML", "CSS", "JavaScript"],
+  },
 ];
 
 const Portfolio = () => {
